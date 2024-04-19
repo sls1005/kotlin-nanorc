@@ -1,7 +1,10 @@
 # Syntax highlighting for Kotlin
 
-syntax kotlin "\.kt$"
+syntax kotlin "\.kts?$"
 comment "/*|*/"
+
+# Symbols
+color brightmagenta "@(\S)*($|\s)"
 
 # Keywords
 #    Hard
@@ -20,12 +23,12 @@ color lime "\<it\>"
 #    See https://kotlinlang.org/docs/reference/grammar.html#kotlinFile
 color lime "#!.*"
 
+# Characters
+color green "'([^\\']|\\([\\$bnrt'"]|u([0-9]|[A-Fa-f]){4}))'"
+
 # Comments
 color sand "//.*"
 color sand start="/\*" end="\*/"
-
-# Characters
-color green "'([^\\']|\\([\\$bnrt'"]|u([0-9]|[A-Fa-f]){4}))'"
 
 # Strings
 color brightgreen ""([^\\"]|\\([\\$bnrt'"]|u([0-9]|[A-Fa-f]){4}))*""
