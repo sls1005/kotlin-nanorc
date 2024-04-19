@@ -14,7 +14,7 @@ color blue "\<(init|field|where|dynamic|constructor|catch|delegate|property|rece
 color sky "\<(lateinit|const|data|sealed|final|open|enum|reified|inline|noinline|crossinline|actual|annotation|out|expect|vararg|suspend|external|internal|inner|companion|override|abstract|protected|private|public|tailrec|infix|operator)\>"
 
 # Special
-color lime "\<(field|it)\>"
+color lime "\<it\>"
 
 # Shebang
 #    See https://kotlinlang.org/docs/reference/grammar.html#kotlinFile
